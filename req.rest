@@ -1,0 +1,36 @@
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "ujicobamidleware",
+    "email": "mid@hacker.net",
+    "password": "12345678",
+    "confPassword": "12345678",
+    "role": "user"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "admin@hacker.net",
+    "password": "12345678"
+}
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "kelasik@hacker.net",
+    "password": "12345678"
+}
+
+###
+GET http://localhost:5000/me
+
+###
+DELETE http://localhost:5000/logout
+
+###
+GET http://localhost:5000/users
